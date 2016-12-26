@@ -21,4 +21,15 @@ IP
 
 TCP
 	 - "Transmission Control Protocol" is what allows computers on a network to
-	   actually talk. 
+	   actually talk.
+
+	- Windowing is the process by which the client computer sends information
+	  to the server computer. 
+		- TCP/IP was originally created for the military, and they needed to
+		  make sure that all of the data would reach its destination without
+		  getting all jumbled up, even if large amounts of data were sent.
+
+		- To fix this, they sent the data in packets, and the packets were sent
+		  in groups, each one getting progressively larger.
+	
+		- 
