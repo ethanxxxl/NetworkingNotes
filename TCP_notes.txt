@@ -67,6 +67,7 @@ IP Address
 	sends it to a DNS server and the DNS server will tell the computer the IP 
 	address for that domain name.
 
+
 DHCP
 	"Dynamic Host Control Protocol" is 
 
@@ -84,5 +85,77 @@ DHCP
 	address. The lease could be any time. Half way through the lease, the 
 	computer will try to renew the lease, which the DHCP server will let it.
 	If the DHCP server is down, the computer will ask again at the next 50% mark
+	What happens when the time is up depends on how the computer is configured.
+		Generally the shorter the lease time the more traffic on a network.
+		
+		The average is 7 days.
+
+
+NAT
+	"Network Address Translation"
+
+	Every router that connects to the internet needs its own dedicated IP
+	address, but once your inside the router you can use any IP address. 
 	
-	
+	Without this every device on the internet would need it's own unique IP
+	address.
+
+
+Numbering System
+	Octets- are a series of 8 numbers. 
+		________.________.________.________ {That is 4 octets}
+
+		The numbers are in binary, so the below chart can be used to find what
+		one number is in binary. You put a one on top of the numbers that add up
+		to the original number.
+		___	__	__	__	_	_	_	_
+		128	64	32	16	8	4	2	1
+
+		for example:
+		192.168.1.1 = 11000000.10101000.0000001.0000001
+		255.255.255.254 = 11111111.11111111.11111111.11111110
+
+	To sum up so far, these addresses are made up of four octet, each of which are
+	eight bits.
+
+
+Subnet Masking
+	An IP address tells you two things, 1) the address of the device. 2) the 
+	subnet number or the network number. 
+
+	devices on different networks cannot talk to each other.
+		If you were to have a computer and a printer connected to each other
+		through a switch, they will not be able to talk to each other unless
+		there is a router to connect them. computers on different subnets cannot
+		talk to each other even if they are physically connected.
+
+	The IP address is devided into 2 parts, the part for the device and the part
+	for the network. The division can be anywhere on th IP address, and is
+	determined by the subnet mask.
+		for example, if you were to have an IP of 192.168.1.1 and a subnet mask
+		of 255.255.255.0, then the 192.168.1 section is the network section and
+		the .1 part is the host part.
+
+		where the split in the IP address is is based upon how many networks you
+		need versus how many devices you want to cram into the networks.
+
+		You can determine the total number of subnets you can have on your 
+		network with the equation 2^n (n being the number of bits you have used
+		for the subnet.)
+
+		You can determin the total number of hosts you can have by the equation
+		2^n-2 (n is still the number of bits used for the subnet.) 
+
+	To figure out the subnet mask, you just add up all the bits used for the 
+	subnet.
+		examples (top row are bits used by the subnet portion of the IP): 
+			11111111.00000000.00000000.00000000
+			255.0.0.0				CLASS A SUBNET MASK
+
+			11111111.11111111.00000000.00000000
+			255.255.0.0				CLASS B SUBNET MASK
+
+			11111111.11111111.11111111.00000000
+			255.255.255.0			CLASS C SUBNET MASK
+
+			
