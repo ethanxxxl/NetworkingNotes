@@ -1,35 +1,88 @@
 TCP/IP
-	> A set of multiplie protocols
+	A set of multiplie protocols
 
 
 IP
-	- IP is the protocol within TCP/IP that controls routing of information to 
-	  different computers and servers on the network.
+	IP is the protocol within TCP/IP that controls routing of information to 
+	different computers and servers on the network. "Connects" the computers 
+	together.
 
-	- deals with IP addresses, default gateway, subnet masking.
+	deals with IP addresses, default gateway, subnet masking.
 
-	- It allows two computers to find each other on
-	  the network so they can communicate with each other.
-	 
-	- Is a "routable" protocol, which means you can divide networks into multiple
-	  subnetworks. In non-routable protocals, every computer can talk to each other
-	  which can cause havok.
-	 
-	- OSI model is the model for how network communications happen. IP is on
-	  layer 3, the network layer.
+	It allows two computers to find each other on
+	the network so they can communicate with each other.
+	
+	Is a "routable" protocol, which means you can divide networks into multiple
+	subnetworks. In non-routable protocals, every computer can talk to each other
+	which can cause havok.
+	
+	OSI model is the model for how network communications happen. IP is on
+	layer 3, the network layer.
 
 
 TCP
-	 - "Transmission Control Protocol" is what allows computers on a network to
-	   actually talk.
+	"Transmission Control Protocol" is what allows computers on a network to
+	actually talk.
 
-	- Windowing is the process by which the client computer sends information
-	  to the server computer. 
-		- TCP/IP was originally created for the military, and they needed to
-		  make sure that all of the data would reach its destination without
-		  getting all jumbled up, even if large amounts of data were sent.
+	Windowing is the process by which the client computer sends information
+	to the server computer. 
+		TCP/IP was originally created for the military, and they needed to
+		make sure that all of the data would reach its destination without
+		getting all jumbled up, even if large amounts of data were sent.
 
-		- To fix this, they sent the data in packets, and the packets were sent
-		  in groups, each one getting progressively larger.
+		To fix this, they sent the data in packets, and the packets were sent
+		in groups, each one getting progressively larger.
 	
-		- 
+		The way this works is that computer one (A) will send one packet.
+		then the second computer (B) will tell A that it recieved that
+		packet. Then computer A, seeing that the connection is good will send
+	 	2 packets, and computer B will tell computer A that it recieved them,
+		and then computer A will send 4 packets (these aren't real numbers,
+		their just examples). If computer A sends some packets and computer B 
+		does not recieve them, then they will go back to sending one, then 2,
+		then 4 untill their is an error. 
+
+	TCP is on OSI layer 4.
+
+
+IP Address
+	IP addresses: Addresses that are used to signifiy a device on a network.
+	every device on a TCP/IP netwok
+		ex: 10.1.10.1
+
+	Subnet Mask: A way to segment a network logically so that different 
+	computers and devices can talk to each other.
+		this is usefull if you have like 200 computers on network and you don't
+		want them all to be able to communicate with each other.
+
+	Default Gateway: the router for the subnetwork you are on. 
+		Your computer is going to look on the local network for the computer / 
+		device / server that you are looking for, if it can't find it, it will
+		go to the default gate way to look for that computer / device / server
+		out on the internet. Basically connect your subnetwork to all the other
+		networks
+
+	"Domain Name Server" DNS maps domain names to IP addresses. Whenever you
+	plug in a website address, it means nothing to the computer, so the computer
+	sends it to a DNS server and the DNS server will tell the computer the IP 
+	address for that domain name.
+
+DHCP
+	"Dynamic Host Control Protocol" is 
+
+	Static this is NOT DHCP, it is where you sit down and assign the computer
+	its IP address, subnet mask, default gateway and dns servers. This can cause
+	problems if you accidentaly assign two computers the same IP address because
+	one computer will get SOME packets, and another will get SOME other packets.
+	
+	Dynamic IP addresses mean when the computer connects to the network, it will
+	call out to the DHCP server and the DHCP server will give the computer it's
+	IP address, subnet mask, default gateway, and list of DNS servers.
+	automatically. It also keeps track of all the used IP addresses.
+	
+	Lease Time is a time limit on how long a computer is allowed to keep an IP
+	address. The lease could be any time. Half way through the lease, the 
+	computer will try to renew the lease, which the DHCP server will let it.
+	If the DHCP server is down, the computer will ask again at the next 50% mark
+	
+	
