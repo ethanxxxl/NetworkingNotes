@@ -1,0 +1,146 @@
+Basic Parts of the Internet
+	The internet cloud: anything that is on the internet, the internet is very
+	complicated. 
+	
+	Modem: the first the device that connects you to the internet
+
+	Router: The device underneath the modem. 
+	
+	Firewall: Protection for the network, it is underneath the router. 
+
+	Switch: A splitter of the internet signal, allows devices to connect to each
+	other or to the internet.
+
+	Wireless access point: connected to the switch. allows wireless devices to
+	connect to the internet.
+
+
+Definitions
+	Physical/Logical: these two things are not the same thing. 
+		Physical: A computer can phyisically be connected to a switch, which 
+		can be physically connected to a router etc
+
+		Logical: You can have 20 computers plugged into a switch, but you can 
+		split the computers into two networks logically. even though the 
+		computers are physically connected together, they cannot talk.
+
+	Speed: data is sized by two different types of measurement. You can have
+	bits and bytes. Kb, kilo bit, KB kilo bye. 1 byte = 8 bits
+		When you buy internet service, they show their speeds in bits. so if you
+		get a speed of 12 Mb, then your speed is also 1.5 MB
+
+
+The Modem
+	The modem takes the protocal used to talk to the internet into data that
+	your computer can use and vice versa. Basically the connection betweeen
+	your network and the internet.
+
+
+Types of Connections
+	T1
+		Very expensive
+		Has a longer range than other connections
+		uses ADTRAN modem
+		fast, but not by todays standards (1.5 MB/s)
+
+	DSL - "Digital Subscriber Line"
+		Provided by telephone lines
+		generally very good.
+		pretty cheap, 
+		maximum speed is about 12 MB/s
+		a good pro to this is that you have your own dedicated line, compared to
+		 others where you have to share bandwidth
+		you can download faster than you can upload.
+
+	Cabel Modem
+		Lot more stable than in the past
+		Docis 3.0, a new thing introduced by cabel, will allow you to have a
+		 download of 100 MB/s and 80 MB/s upload
+		unlike DSL, you share the bandwidth with other people.
+
+	Satelite
+		Download speed isn't that bad (1.5 MB/s)
+		Upload speed is horrible
+		good if you live in the middle of nowhere.
+
+
+The Router
+	The router allows you to separate different networks.
+	
+	If you had a building that had multiple busnesses, you could have one modem
+	that splits off two multiple routers, which separates the businesses so the
+	businesses are separate.
+
+
+Firewall
+	a device that tries to prevent hackers from getting into your network.
+
+	in the past, the firewall was a physical device that prevented undesired 
+	traffic. now they are morce complicated, and they are build into the modem
+	or router. 
+
+
+VPN
+	allows people from outside a network to work inside your network.
+
+	works by a "Client server" structure. you have a server which has a list of
+	usernames and passwords of all the people that are allowed on the network.
+	this is called a VPN Endpoint. the computer that wants access to the network
+	will usually have a client installed to connect them to the server.
+
+
+The Switch
+	Hubs
+		is obselete. they were obselete 10 years ago.
+		
+		to find out if it is a hub or a switch just look at the to.
+
+		the hub will just split the network evenly. kind of like a cable 
+		splitter
+
+	Switch
+		they have a little bit of intelligence
+		
+		they dynamically allocate the amount of connection to all the connected
+		computers.
+	
+	Managed v Unmanaged
+		unmanaged has a little bit of knowledge, but no configuration 
+		whatsoever
+		
+		a managed switch allows you to program it to do things that are useful 
+		when you have a lot of devices connected to the network.
+
+
+Wireless Access Point
+	A device that allows wireless computers and devices to connect to the
+	network.
+
+	sometimes they have antennes, but now always
+
+	different standards
+		802.11 A: a standard that didn't work, isn't really supported, and isn't
+		compatible with anything
+
+		802.11 B: a standard that came out around 10 years ago, about 11 MB/s
+
+		802.11 G: 58 MB/s, newer, is compatible with B
+
+		802.11 N: allows for a larger area to be covered, is at least 2 times
+		faster than G, and allows for real time communication. 
+
+
+Devices, Clients, Servers
+	everything that is on the network is called a networkning device.
+
+	Servers
+		a networked device that provides something to the rest of the network.
+		can be a file server, print server...
+
+		any operating system can be a server.
+
+	Client
+		any device that recieves a service from a server or accesses something
+		from another device.
+
+
