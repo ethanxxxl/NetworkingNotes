@@ -1,0 +1,159 @@
+Basic Broadband Concepts
+	1 byte = 8 bits, 1 B = 8 b
+		the speed of an internet connection is represented in bits. the size
+		of a file is represented in bytes
+
+	Synchronous vs Asynchronous: a synchronous internet connection allows you to
+	to have the same download and upload speeds (ex T1). Asynchronous has different 
+	download and upload speeds. (ex cable, satelite, )
+	
+	Latency: is not speed, speed is how fast the data can get to your computer.
+	latency is the time between when you send a command to something like a web
+	server, and when it gets executed.
+		Latency is measured in milliseconds ( > 20 ms is good)
+		
+		having a low latency is important for real time communication.
+
+	Classes of service
+		Business: ISP's like these more. they also get better gurrantees, and
+		support.
+
+		Residential: not as good as business.
+
+	IP addresses:
+		static IP
+			this is the address that other computers use to get to your network.
+			it always stays the same.
+
+			static IP addresses usually have less problems.
+
+		dynamic IP
+			means you IP address changes fairly often
+
+			problems: Your IP changes, and a lot of spam filters will filter
+			out your IP address if it a dynamic address.
+
+
+	Ports and Services
+		When you browse the internet, you use port 80
+		
+		when you send an email, you use the SMT port.
+
+		Your ISP may block certain ports! most residential services will block
+		the port used for websites.
+
+	
+	SLA's "Service Level Agreements"
+		what you and your service provider absolutly agree on what you will get.
+		
+		without this you will not always get the advertised speeds all the time.
+		
+		these are a lot more expensive (ex, 10x the cost of a normal connection)
+	
+	
+T1
+	Allow for 1.5 MB upload and download speeds. 
+	
+	You do get an SLA when you get them.
+	
+	They can go to places that cable, DSL etc can't go.
+	
+	Their kinda good, but they are old. they are also very expensive. (starts
+	at $300)
+	
+	can be used for both voice and data, it consists of 24, 64 bit channels.
+	each one can be either data or one phone line.
+
+	You can also get "Fractional T1" connections which only gives you a few of
+	the channels, which is slower, but also cheaper.
+
+	
+Carrier Ethernet
+	Another type of business class service that comes with a SLA
+
+	Unlike T1, you have a can have a whole range of speeds, either much faster
+	or even slower than T1
+
+	can be expensive ($600 per month)
+
+
+Point to Point Wireless
+	The company has a tower that sends a signal to an antenna on your building.
+	
+	The latency on this isn't that bad.
+
+	This isn't Wireless, it can't be moved, it is directional.
+
+	can be expensive, but it can also be very fast. (1 GB/s, 3,000 per month)
+
+	
+Wireless
+	Many different types eg. WiMax, 3G, 4G etc
+
+	It is NOT point to point, so you can get internet almost anywhere.
+
+	Speeds are very different, depending on who you get it from and what type
+	you get etc.
+
+	The big companies that provide this stuff are pushing to run entire networks
+	off of this.
+
+	Make sure you know your plan, because they may say that you can only use it
+	for one computer.
+
+	They also limit the amount of data your allowed to transfer per month
+
+
+DSL 
+	"Digital Subscriber Line", is offered by telephone companies
+
+	Is Asynchronous. You can get up to 12 MB/s down.
+
+	If you have a telephone line from another company, you can't have a DSL, 
+	so you have to have a telephone line and a DSL line from the same line.
+
+	The DSL can only be so far away from the central office, which is the point
+	where all the telephone lines meet up. 
+
+	The nice thing about this is that you have a dedicated line to the central
+	office, which means you don't share your bandwidth with other people like 
+	in cable.
+
+	Not good for running websites.
+
+
+Cable
+	The way this works is that the cabel that comes to your house for your TV
+	is split and goes to a modem in your house.
+	
+	DOCIS 3.0 is a new technology that allows for very fast upload / download 
+	speeds (152 Mb/s up, 108 Mb/s down)
+
+	The problem with this is that you share that bandwidth, so if there are a	
+	lot of people on the internet at once, the bandwidth of the trunk line (the
+	line where all the line come together) can get all used up. 
+	
+	Does not come with SLA
+
+
+FIOS
+	"Fiber Optic Internet Service" 
+
+	The speeds of this are insane (potentially 1Gb/s)
+
+	The only company really pushing this is verizon.
+
+	The only problem with this is that it requires a lot of work and is very 
+	expensive to install
+
+
+Satellite
+	Nice part about this is that you can get an internet connection just about
+	anywhere
+
+	Starts at $100 per month for 1.5 Mb/s to 5 M/s
+
+	The latency with this is absolutely horrible. There is no chance of voice
+	over IP or real time communication.
+
+
